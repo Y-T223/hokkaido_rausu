@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>羅臼町郷土資料館｜知床の歴史と自然を、旧校舎で。</title>
+<meta name="description" content="北海道羅臼町の郷土資料館。国指定重要文化財・松法川北岸遺跡の出土品、知床の動植物標本を旧校舎で展示。入館無料。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --board:#1e2d28; --board-deep:#16211d; --brass:#b3935a; --brass-lt:#d2b988;
+  --paper:#ece4d2; --paper-dk:#ded3bb; --wood:#5a3e2b; --ink:#1c1f1d;
+  --serif:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho","YuMincho",serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--serif);color:var(--ink);background:var(--paper);line-height:1.95;font-size:16px;overflow-x:hidden;padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+section{padding:84px 0}
+h2{font-weight:500;font-size:clamp(24px,5.6vw,34px);line-height:1.5;letter-spacing:.12em;color:var(--board);margin-bottom:28px}
+h2::after{content:"";display:block;width:56px;height:1px;background:var(--brass);margin-top:18px}
+.dark h2{color:var(--paper)}
+p+p{margin-top:1.1em}
+.ph{background:var(--board-deep);overflow:hidden}
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;color:var(--paper);background:var(--board-deep);padding:0}
+.hero .ph{position:absolute;inset:0}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,24,21,.35) 0%,rgba(16,24,21,.15) 35%,rgba(16,24,21,.88) 100%)}
+.hero .in{position:relative;z-index:1;padding:0 24px calc(56px + env(safe-area-inset-bottom));max-width:980px;margin:0 auto;width:100%}
+.hero .sub{font-size:14px;letter-spacing:.3em;color:var(--brass-lt)}
+.hero h1{font-weight:500;font-size:clamp(38px,11vw,68px);line-height:1.35;letter-spacing:.14em;margin:14px 0 18px}
+.hero .lead{font-size:15px;letter-spacing:.08em;max-width:30em}
+.hero .tag{display:inline-block;margin-top:26px;border:1px solid var(--brass);padding:6px 18px;font-size:14px;letter-spacing:.2em;color:var(--brass-lt)}
+/* frame photo */
+.frame{border:1px solid var(--brass);padding:8px;background:var(--paper)}
+.frame .ph{aspect-ratio:4/3}
+.dark .frame{background:var(--board)}
+.dark{background:var(--board);color:var(--paper)}
+.split{display:grid;gap:36px}
+@media(min-width:760px){.split{grid-template-columns:1fr 1fr;align-items:center;gap:56px}.split.rev .frame{order:2}}
+/* features */
+.feat{list-style:none;border-top:1px solid var(--brass)}
+.feat li{padding:22px 0;border-bottom:1px solid var(--paper-dk)}
+.feat b{display:block;font-weight:700;font-size:18px;color:var(--board);letter-spacing:.06em;margin-bottom:4px}
+.big{font-size:clamp(46px,14vw,76px);font-weight:500;color:var(--brass-lt);line-height:1.1;letter-spacing:.04em}
+.big small{font-size:.32em;margin-left:.3em;letter-spacing:.2em}
+.items{margin-top:22px;border-top:1px solid rgba(179,147,90,.5)}
+.items li{list-style:none;padding:10px 0;border-bottom:1px solid rgba(179,147,90,.3)}
+/* reviews */
+.rev-grid{display:grid;gap:20px}
+@media(min-width:760px){.rev-grid{grid-template-columns:1fr 1fr}}
+.rev{background:#f6f1e4;border:1px solid var(--paper-dk);border-top:3px solid var(--brass);padding:26px 24px}
+.stars{color:var(--brass);letter-spacing:.2em;font-size:18px}
+.rev p{margin-top:10px;font-size:15px}
+/* info */
+table{width:100%;border-collapse:collapse}
+th,td{text-align:left;vertical-align:top;padding:16px 0;border-bottom:1px solid var(--paper-dk);font-weight:400}
+th{width:7.5em;color:var(--wood);font-weight:700;letter-spacing:.1em;white-space:nowrap;padding-right:12px}
+td a{text-decoration:underline;text-underline-offset:4px;word-break:break-all}
+/* map */
+.map{border:1px solid var(--brass);padding:8px;background:var(--paper)}
+.map iframe{display:block;width:100%;height:320px;border:0}
+.btns{display:grid;gap:12px;margin-top:18px}
+@media(min-width:640px){.btns.row{grid-template-columns:repeat(3,1fr)}}
+.btn{display:block;text-align:center;text-decoration:none;padding:16px 18px;min-height:52px;background:var(--board);color:var(--paper);border:1px solid var(--board);letter-spacing:.14em;font-size:16px;-webkit-tap-highlight-color:transparent}
+.btn.line{background:transparent;color:var(--board)}
+.btn:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+.btn:hover{background:var(--wood);border-color:var(--wood);color:var(--paper)}
+footer{background:var(--board-deep);color:var(--brass-lt);text-align:center;padding:36px 24px calc(36px + env(safe-area-inset-bottom));font-size:13px;letter-spacing:.14em}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="ph"><img src="images/1.jpg" alt="知床の山並みを背に建つ、旧校舎の羅臼町郷土資料館" fetchpriority="high"></div>
+  <div class="in">
+    <p class="sub">北海道 知床・羅臼</p>
+    <h1>羅臼町<br>郷土資料館</h1>
+    <p class="lead">古い校舎に、知床の千年が眠っている。縄文の土器から、森と海の生き物まで。</p>
+    <span class="tag">入館無料</span>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>旧校舎で出会う、<br>知床の歴史と自然</h2>
+    <p>かつて子どもたちの声が響いた植別小中学校の校舎が、いま羅臼の記憶を伝える資料館になっています。木の床、広い廊下、大きな窓。その教室ごとに、遺跡の出土品や知床の動植物が静かに並びます。</p>
+    <p>羅臼町が2011年12月に開館しました。縄文時代から続く地域の歴史、アイヌ文化やオホーツク文化の資料を、まとめて見られる場所です。</p>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap split">
+    <div class="frame"><div class="ph"><img src="images/2.jpg" alt="ガラスケースに並ぶ松法川北岸遺跡の出土品" loading="lazy"></div></div>
+    <div>
+      <h2>松法川北岸遺跡の<br>出土品を展示</h2>
+      <p class="big">260<small>点</small></p>
+      <p style="margin-top:14px">国指定重要文化財に含まれる、北海道松法川北岸遺跡の出土品を展示しています。オホーツク文化と擦文文化が混ざり合う、縄文後期の「トビニタイ文化」の資料が豊富に揃います。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split rev">
+    <div class="frame"><div class="ph"><img src="images/3.jpg" alt="旧校舎の教室に展示されたシマフクロウとオオワシの剥製" loading="lazy"></div></div>
+    <div>
+      <h2>知床の生き物たちを<br>間近に</h2>
+      <p>知床の自然を代表する大きな鳥、シマフクロウとオオワシの剥製。昆虫の標本、クジラの模型。そして生きたまま展示されているヒカリゴケ（北海道天然記念物）。</p>
+      <ul class="items" style="padding:0;margin-top:22px;border-color:var(--paper-dk)">
+        <li style="border-color:var(--paper-dk)">シマフクロウ・オオワシの剥製</li>
+        <li style="border-color:var(--paper-dk)">多数の昆虫標本、クジラの模型</li>
+        <li style="border-color:var(--paper-dk)">ヒカリゴケの生体展示</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--paper-dk)">
+  <div class="wrap">
+    <h2>この資料館の魅力</h2>
+    <ul class="feat" style="padding:0">
+      <li><b>トビニタイ文化の資料が豊富</b>オホーツク文化と擦文文化が混在する、独特の文化を伝える出土品を収蔵しています。</li>
+      <li><b>知床の自然を一度に学べる</b>動植物の標本や生体展示で、知床の自然の成り立ちを体感できます。</li>
+      <li><b>学芸員による解説ツアー</b>展示の背景を、専門の学芸員が案内します。教育面でも高く評価されています。</li>
+      <li><b>地域の拠点としての旧校舎</b>歴史と文化を次の世代へ伝える場として、いまも町に親しまれています。</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>訪れた方の声</h2>
+    <div class="rev-grid">
+      <div class="rev"><div class="stars" aria-label="5段階中4">★★★★☆</div><p>縄文からの発掘品やアイヌの文化、動植物まで展示しており、解説も詳しいです。飼育したクマを天に送る熊送りの儀式など知らない文化にも触れることができました。</p></div>
+      <div class="rev"><div class="stars" aria-label="5段階中5">★★★★★</div><p>旧植別小学校を資料館に。入館料無料。展示は非常に充実しています。アンケートに答えるとプレゼントがもらえます。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <h2>施設情報</h2>
+    <div style="background:var(--paper);color:var(--ink);padding:8px 24px">
+    <table>
+      <tr><th>施設名</th><td>羅臼町郷土資料館</td></tr>
+      <tr><th>住所</th><td>目梨郡羅臼町峯浜町307-1</td></tr>
+      <tr><th>電話番号</th><td><a href="tel:0153883850">0153-88-3850</a></td></tr>
+      <tr><th>休館日</th><td>土日、祝祭日、年末年始<br>（7月1日～9月上旬は無休）</td></tr>
+      <tr><th>入館料</th><td>無料</td></tr>
+      <tr><th>公式サイト</th><td><a href="https://www.rausu-town.jp/pages/view/179" target="_blank" rel="noopener">rausu-town.jp</a></td></tr>
+    </table>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>アクセス</h2>
+    <div class="map">
+      <iframe title="羅臼町郷土資料館の地図" src="https://www.google.com/maps?q=%E7%9B%AE%E6%A2%A8%E9%83%A1%E7%BE%85%E8%87%BC%E7%94%BA%E5%B3%AF%E6%B5%9C%E7%94%BA307-1&amp;output=embed&amp;hl=ja" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+    <div class="btns">
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=%E7%9B%AE%E6%A2%A8%E9%83%A1%E7%BE%85%E8%87%BC%E7%94%BA%E5%B3%AF%E6%B5%9C%E7%94%BA307-1" target="_blank" rel="noopener">Googleマップで開く</a>
+    </div>
+    <p style="margin-top:20px;font-size:14px">住所：目梨郡羅臼町峯浜町307-1</p>
+  </div>
+</section>
+
+<section style="background:var(--paper-dk)">
+  <div class="wrap">
+    <h2>お問い合わせ</h2>
+    <p>開館日や展示、解説ツアーについては、お電話またはフォームからご連絡ください。</p>
+    <div class="btns row" style="margin-top:24px">
+      <a class="btn" href="tel:0153883850">電話をかける</a>
+      <a class="btn line" href="https://www.rausu-town.jp/inquiries/index/18" target="_blank" rel="noopener">問い合わせフォーム</a>
+      <a class="btn line" href="https://www.rausu-town.jp/pages/view/179" target="_blank" rel="noopener">公式ページ</a>
+    </div>
+  </div>
+</section>
+
+<footer>羅臼町郷土資料館　北海道目梨郡羅臼町峯浜町307-1</footer>
+</body>
+</html>
